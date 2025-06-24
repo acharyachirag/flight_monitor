@@ -148,6 +148,11 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
+scheduler_events = {
+    "hourly":["flight_monitor.flight_monitor.api.aviationstack.sync_flight_status"]
+    
+    }
+
 # scheduler_events = {
 # 	"all": [
 # 		"flight_monitor.tasks.all"

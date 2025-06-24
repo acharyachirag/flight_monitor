@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:flight_number",
+ "creation": "2025-06-20 11:10:36.746749",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "flight_information_section",
+  "flight_number",
+  "flight_status_section",
+  "airline",
+  "origin",
+  "destination",
+  "scheduled_departure",
+  "scheduled_arrival",
+  "estimated_departure",
+  "estimated_arrival",
+  "actual_departure",
+  "actual_arrival",
+  "gate",
+  "terminal",
+  "status",
+  "delay_duration",
+  "latitude",
+  "longitude"
+ ],
+ "fields": [
+  {
+   "fieldname": "flight_information_section",
+   "fieldtype": "Section Break",
+   "label": "Flight Information"
+  },
+  {
+   "fieldname": "flight_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Flight Number",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "flight_status_section",
+   "fieldtype": "Section Break",
+   "label": "Flight Status"
+  },
+  {
+   "fieldname": "airline",
+   "fieldtype": "Data",
+   "label": "Airline"
+  },
+  {
+   "fieldname": "origin",
+   "fieldtype": "Data",
+   "label": "Origin"
+  },
+  {
+   "fieldname": "destination",
+   "fieldtype": "Data",
+   "label": "Destination"
+  },
+  {
+   "fieldname": "scheduled_departure",
+   "fieldtype": "Datetime",
+   "label": "Scheduled Departure"
+  },
+  {
+   "fieldname": "scheduled_arrival",
+   "fieldtype": "Datetime",
+   "label": "Scheduled Arrival"
+  },
+  {
+   "fieldname": "estimated_departure",
+   "fieldtype": "Datetime",
+   "label": "Estimated Departure"
+  },
+  {
+   "fieldname": "estimated_arrival",
+   "fieldtype": "Datetime",
+   "label": "Estimated Arrival"
+  },
+  {
+   "fieldname": "actual_departure",
+   "fieldtype": "Datetime",
+   "label": "Actual Departure"
+  },
+  {
+   "fieldname": "actual_arrival",
+   "fieldtype": "Datetime",
+   "label": "Actual Arrival"
+  },
+  {
+   "fieldname": "gate",
+   "fieldtype": "Data",
+   "label": "Gate"
+  },
+  {
+   "fieldname": "terminal",
+   "fieldtype": "Data",
+   "label": "Terminal"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Scheduled\nDelayed\nEn Route\nLanded\nCancelled"
+  },
+  {
+   "fieldname": "delay_duration",
+   "fieldtype": "Int",
+   "label": "Delay Duration (mins)"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Float",
+   "label": "Latitude"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Float",
+   "label": "Longitude"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-20 18:52:02.796816",
+ "modified_by": "Administrator",
+ "module": "Flight Monitor",
+ "name": "Flight",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
